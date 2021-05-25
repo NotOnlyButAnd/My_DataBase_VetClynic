@@ -8,6 +8,8 @@ namespace LW8_DataBases
 {
     static class Program
     {
+        public static MainForm mainForm;
+
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -16,7 +18,8 @@ namespace LW8_DataBases
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            mainForm = new MainForm();
+            Application.Run(mainForm);
         }
     }
 }
